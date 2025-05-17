@@ -11,6 +11,31 @@
             bindings = <&kp PLUS>;
             key-positions = <2 3>;
         };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <3 4>;
+        };
+
+        LeftParenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <4 5>;
+        };
+
+        RightParenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+        };
     };
 
     keymap {
