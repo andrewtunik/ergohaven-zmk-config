@@ -83,6 +83,36 @@
         };
     };
 
+    macros {
+        cmd_F5: cmd_F5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp F5>;
+            label = "CMD_F5";
+        };
+
+        cmd_F6: cmd_F6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp F6>;
+            label = "CMD_F6";
+        };
+
+        cmd_F11: cmd_F11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp F11>;
+            label = "CMD_F11";
+        };
+
+        cmd_F12: cmd_F12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp F12>;
+            label = "CMD_F12";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
