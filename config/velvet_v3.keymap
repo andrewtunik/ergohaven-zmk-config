@@ -180,10 +180,10 @@
 
         base {
             bindings = <
-&kp ESC  &kp Q  &kp W      &kp E       &kp R           &kp T                                 &kp Y            &kp U                        &kp I         &kp O         &kp P          &kp LEFT_BRACKET
-&kp TAB  &kp A  &kp S      &kp D       &kp F           &kp G                                 &kp H            &kp J                        &kp K         &kp L         &kp SEMI       &kp SINGLE_QUOTE
-&mo 4    &kp Z  &kp X      &kp C       &kp V           &kp B                                 &kp N            &kp M                        &kp COMMA     &kp DOT       &kp BACKSLASH  &kp RIGHT_BRACKET
-                &kp LCTRL  &kp DELETE  &sk LEFT_SHIFT  &mo 1  &mt LCMD ENTER    &lt 2 SPACE  &lt 3 BACKSPACE  &mt RCTRL RC(RIGHT_BRACKET)  &kp C_VOL_DN  &kp C_VOL_UP
+&kp ESC  &kp Q  &kp W      &kp E       &kp R           &kp T                                 &kp Y            &kp U                        &kp I      &kp O            &kp P          &kp LEFT_BRACKET
+&kp TAB  &kp A  &kp S      &kp D       &kp F           &kp G                                 &kp H            &kp J                        &kp K      &kp L            &kp SEMI       &kp SINGLE_QUOTE
+&mo 4    &kp Z  &kp X      &kp C       &kp V           &kp B                                 &kp N            &kp M                        &kp COMMA  &kp DOT          &kp BACKSLASH  &kp RIGHT_BRACKET
+                &kp LCTRL  &kp DELETE  &sk LEFT_SHIFT  &mo 1  &mt LCMD ENTER    &lt 2 SPACE  &lt 3 BACKSPACE  &mt RCTRL RC(RIGHT_BRACKET)  &kp RCTRL  &sk RIGHT_SHIFT
             >;
 
             display-name = "Base";
@@ -202,10 +202,10 @@
 
         raise {
             bindings = <
-&trans  &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN               &kp HOME                       &kp CARET      &kp PAGE_UP          &kp UP_ARROW  &kp PAGE_DOWN  &kp HOME  &trans
-&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW             &kp END                        &kp MINUS      &kp LEFT             &kp DOWN      &kp RIGHT      &kp END   &none
-&trans  &trans  &cmd_F5         &cmd_F6         &cmd_F11                    &cmd_F12                       &none          &none                &none         &none          &trans    &trans
-                &trans          &trans          &mt LEFT_CONTROL LC(RS(L))  &none     &kp ENTER    &LAYER  &kp BACKSPACE  &mt RIGHT_ALT RA(L)  &trans        &trans
+&trans  &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN               &kp HOME                       &kp CARET      &kp PAGE_UP          &kp UP_ARROW       &kp PAGE_DOWN  &kp HOME  &trans
+&trans  &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW             &kp END                        &kp MINUS      &kp LEFT             &kp DOWN           &kp RIGHT      &kp END   &none
+&trans  &trans  &cmd_F5         &cmd_F6         &cmd_F11                    &cmd_F12                       &none          &none                &none              &none          &trans    &trans
+                &trans          &trans          &mt LEFT_CONTROL LC(RS(L))  &none     &kp ENTER    &LAYER  &kp BACKSPACE  &mt RIGHT_ALT RA(L)  &kp C_VOLUME_DOWN  &kp C_VOL_UP
             >;
 
             display-name = "Raise";
