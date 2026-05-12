@@ -166,6 +166,13 @@
             bindings = <&none>;
             label = "LAYER";
         };
+
+        CMD_GUI: CMD_GUI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp TILDE>;
+            label = "CMD_GUI";
+        };
     };
 
     keymap {
