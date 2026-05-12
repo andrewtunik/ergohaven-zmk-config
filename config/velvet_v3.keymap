@@ -166,13 +166,6 @@
             bindings = <&none>;
             label = "LAYER";
         };
-
-        COM_APOSTR: COMMAND_aph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp APOSTROPHE>;
-            label = "COMMAND_APH";
-        };
     };
 
     keymap {
@@ -180,10 +173,10 @@
 
         base {
             bindings = <
-&kp ESC  &kp Q  &kp W      &kp E       &kp R           &kp T                                 &kp Y          &kp U      &kp I      &kp O    &kp P          &kp LEFT_BRACKET
-&kp TAB  &kp A  &kp S      &kp D       &kp F           &kp G                                 &kp H          &kp J      &kp K      &kp L    &kp SEMI       &kp SINGLE_QUOTE
-&mo 4    &kp Z  &kp X      &kp C       &kp V           &kp B                                 &kp N          &kp M      &kp COMMA  &kp DOT  &kp BACKSLASH  &kp RIGHT_BRACKET
-                &kp LCTRL  &kp DELETE  &sk LEFT_SHIFT  &mo 1  &mt LCMD ENTER    &lt 2 SPACE  &kp BACKSPACE  &sk RCTRL  &sl 2      &mo 3
+&kp ESC  &kp Q  &kp W      &kp E      &kp R           &kp T                                 &kp Y          &kp U       &kp I      &kp O    &kp P          &kp LEFT_BRACKET
+&kp TAB  &kp A  &kp S      &kp D      &kp F           &kp G                                 &kp H          &kp J       &kp K      &kp L    &kp SEMI       &kp SINGLE_QUOTE
+&mo 4    &kp Z  &kp X      &kp C      &kp V           &kp B                                 &kp N          &kp M       &kp COMMA  &kp DOT  &kp BACKSLASH  &kp RIGHT_BRACKET
+                &kp LCTRL  &kp TILDE  &sk LEFT_SHIFT  &mo 1  &mt LCMD ENTER    &lt 2 SPACE  &kp BACKSPACE  &kp DELETE  &sl 2      &mo 3
             >;
 
             display-name = "Base";
@@ -194,7 +187,7 @@
 &kp TILDE         &kp N1           &kp N2         &kp N3         &kp N4          &kp N5                                      &kp N6         &kp N7         &kp N8                &kp N9                &kp N0                 &kp MINUS
 &kp SQT           &kp EXCLAMATION  &kp AT_SIGN    &kp HASH       &kp DOLLAR      &kp PERCENT                                 &kp CARET      &kp AMPERSAND  &kp ASTERISK          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &kp K_CALCULATOR  &kp PRINTSCREEN  &kp BACKSLASH  &kp QUESTION   &kp SLASH       &kp LC(SPACE)                               &kp CLCK       &kp LC(LEFT)   &kp PAGE_DOWN         &kp PAGE_UP           &kp LC(RIGHT)          &kp PLUS
-                                   &COM_APOSTR    &kp LC(SLASH)  &sk LEFT_SHIFT  &LAYER         &kp LEFT_SHIFT    &kp SPACE  &kp BACKSPACE  &sk RCTRL      &kp NON_US_BACKSLASH  &sk RIGHT_SHIFT
+                                   &kp LEFT_GUI   &kp LC(SLASH)  &sk LEFT_SHIFT  &LAYER         &kp LEFT_SHIFT    &kp SPACE  &kp BACKSPACE  &sk RCTRL      &kp NON_US_BACKSLASH  &sk RIGHT_SHIFT
             >;
 
             display-name = "Lower";
